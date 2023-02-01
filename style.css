@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    min-height: 150vh;
+    background-image: linear-gradient(rgba(14, 19, 48, 0.7), rgba(10, 17, 44, 0.7)), url(image/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .responsive {
+    padding: 40px 15px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  div.gallery {
+    border: 3px solid rgb(0, 0, 0);
+  }
+  
+  div.gallery:hover {
+    border: 3px solid rgb(17, 1, 248);
+  }
+  
+  div.gallery img {
+    width: 100%;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  #form {
+    position: absolute;
+    top: 500px;
+    left: 450px;
+    visibility: hidden;
+  }
+  
+  #create-account-form {
+    width: 450px;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: chocolate;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #dice {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    visibility: hidden;
+  
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <style>
+        .header {
+            min-height: 95vh;
+            background-image: linear-gradient(rgba(14, 19, 48, 0.7), rgba(10, 17, 44, 0.7)), url(image/pic1.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        .dice {
+            position: absolute;
+            top: 80px;
+            left: 500px;
+            cursor: pointer;
+        }
+        #xlabel{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header" id="home">
+    <div class="dice">
+        <label id="xlabel"></label>
+        <img src="image/diceimage.png" alt=".." id="diceimage" onclick="diceimage()" width="200px">
+    </div>
+</section>
+    <script>
+        let x;
+        var count =0;
+        var randomsum=0;
+        document.getElementById("diceimage").onclick = function () {
+
+            x = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("xlabel").innerHTML = x;
+
+            count++
+            if (count==3) {
+                randomsum+=x
+                                                                                                
+            }
+        }
+
+
+
+        </script>
+</body>
+
+</html>

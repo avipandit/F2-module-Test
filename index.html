@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2 Module Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header" id="home">
+        <div class="responsive">
+            <div class="gallery">
+              <a href="#form">
+                <img src="image/register.jpg" alt="Cinque Terre" width="250" height="250" onclick="showpage()">
+              </a>
+              <div class="desc">Register Here</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a href="">
+                <img src="image/display.jpg" alt="" width="250" height="250" onclick="showdetails()">
+              </a>
+              <div class="desc">Display Details</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a href="diceimage.html">
+                <img src="image/dice.jpg" alt="dice" width="250" height="250">
+              </a>
+              <div class="desc">Dice Game</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a href="">
+                <img src="image/congratulation.png" alt="congratulation image" width="250" height="250">
+              </a>
+              <div class="desc">Final Show</div>
+            </div>
+          </div>
+</section>
+<section id="form">
+<form  id="create-account-form" action="" method="get">
+        
+    <div class="title">
+        <h2>Register Account</h2>
+    </div>
+    <!--Name-->
+    <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name" required>
+    </div>
+    <!-- EMAIL -->
+    <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" name="email" required>
+    </div>
+    <!-- PASSWORD -->
+    <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username" required>
+    </div>
+
+    <button type="submit" class="btn" id="btn" onclick="saveData()">Register</button>
+</form>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
